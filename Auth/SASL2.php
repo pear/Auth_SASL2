@@ -55,7 +55,7 @@ class Auth_SASL2
     *                             SCRAM-* (any mechanism of the SCRAM family)
     *                     Types are not case sensitive
     */
-    function &factory($type)
+    function factory($type)
     {
         switch (strtolower($type)) {
             case 'anonymous':
@@ -110,11 +110,13 @@ class Auth_SASL2
                 break;
         }
 
-        require_once($filename);
-        if (isset($parameter))
+        require_once $filename;
+        if (isset($parameter)) {
             $obj = new $classname($parameter);
-        else
+        } else {
             $obj = new $classname();
+        }
+
         return $obj;
     }
 }
