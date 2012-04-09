@@ -43,12 +43,12 @@
 * @author  Jehan <jehan.marmottard@gmail.com>
 * @access  public
 * @version 1.0
-* @package Auth_SASL
+* @package Auth_SASL2
 */
 
-require_once('Auth/SASL/Common.php');
+require_once('Auth/SASL2/Common.php');
 
-class Auth_SASL_SCRAM extends Auth_SASL_Common
+class Auth_SASL2_SCRAM extends Auth_SASL2_Common
 {
     /**
     * Construct a SCRAM-H client where 'H' is a cryptographic hash function.

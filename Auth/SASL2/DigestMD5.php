@@ -43,9 +43,9 @@
 * @package Auth_SASL
 */
 
-require_once('Auth/SASL/Common.php');
+require_once('Auth/SASL2/Common.php');
 
-class Auth_SASL_DigestMD5 extends Auth_SASL_Common
+class Auth_SASL2_DigestMD5 extends Auth_SASL2_Common
 {
     /**
     * Provides the (main) client response for DIGEST-MD5

@@ -35,31 +35,37 @@
 // $Id$
 
 /**
-* This is technically not a SASL mechanism, however
-* it's used by Net_Sieve, Net_Cyrus and potentially
-* other protocols , so here is a good place to abstract
-* it.
+* Implmentation of ANONYMOUS SASL mechanism
 *
 * @author  Richard Heyes <richard@php.net>
 * @access  public
 * @version 1.0
-* @package Auth_SASL
+* @package Auth_SASL2
 */
 
-require_once('Auth/SASL/Common.php');
+require_once('Auth/SASL2/Common.php');
 
-class Auth_SASL_Login extends Auth_SASL_Common
+class Auth_SASL2_Anonymous extends Auth_SASL2_Common
 {
     /**
-    * Pseudo SASL LOGIN mechanism
+    * Not much to do here except return the token supplied.
+    * No encoding, hashing or encryption takes place for this
+    * mechanism, simply one of:
+    *  o An email address
+    *  o An opaque string not containing "@" that can be interpreted
+    *    by the sysadmin
+    *  o Nothing
     *
-    * @param  string $user Username
-    * @param  string $pass Password
-    * @return string       LOGIN string
+    * We could have some logic here for the second option, but this
+    * would by no means create something interpretable.
+    *
+    * @param  string $token Optional email address or string to provide
+    *                       as trace information.
+    * @return string        The unaltered input token
     */
-    function getResponse($user, $pass)
+    function getResponse($token = '')
     {
-        return sprintf('LOGIN %s %s', $user, $pass);
+        return $token;
     }
 }
-?>
+

@@ -40,12 +40,12 @@
 * @author  Christoph Schulz <develop@kristov.de>
 * @access  public
 * @version 1.0.3
-* @package Auth_SASL
+* @package Auth_SASL2
 */
 
-require_once('Auth/SASL/Common.php');
+require_once('Auth/SASL2/Common.php');
 
-class Auth_SASL_External extends Auth_SASL_Common
+class Auth_SASL2_External extends Auth_SASL2_Common
 {
     /**
     * Returns EXTERNAL response

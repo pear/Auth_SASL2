@@ -8,7 +8,7 @@
   http://pear.php.net/dtd/package-2.0
   http://pear.php.net/dtd/package-2.0.xsd"
 >
- <name>Auth_SASL</name>
+ <name>Auth_SASL2</name>
  <channel>pear.php.net</channel>
  <summary>Abstraction of various SASL mechanism responses</summary>
  <description>
@@ -60,7 +60,7 @@ QA release
  <contents>
   <dir name="/">
    <dir name="Auth">
-    <dir name="SASL">
+    <dir name="SASL2">
      <file name="Anonymous.php" role="php" />
      <file name="Common.php" role="php" />
      <file name="CramMD5.php" role="php" />
@@ -70,7 +70,7 @@ QA release
      <file name="Plain.php" role="php" />
      <file name="SCRAM.php" role="php" />
     </dir> <!-- //SASL -->
-    <file name="SASL.php" role="php" />
+    <file name="SASL2.php" role="php" />
    </dir><!-- /Auth -->
   </dir> <!-- / -->
  </contents>
@@ -78,7 +78,7 @@ QA release
  <dependencies>
   <required>
    <php>
-    <min>4.2.0</min>
+    <min>5.0.0</min>
    </php>
    <pearinstaller>
     <min>1.4.3</min>
