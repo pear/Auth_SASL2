@@ -43,27 +43,27 @@
 * @package Auth_SASL2
 */
 
-require_once('Auth/SASL2/Common.php');
+require_once 'Auth/SASL2/Common.php';
 
 class Auth_SASL2_Anonymous extends Auth_SASL2_Common
 {
     /**
-    * Not much to do here except return the token supplied.
-    * No encoding, hashing or encryption takes place for this
-    * mechanism, simply one of:
-    *  o An email address
-    *  o An opaque string not containing "@" that can be interpreted
-    *    by the sysadmin
-    *  o Nothing
-    *
-    * We could have some logic here for the second option, but this
-    * would by no means create something interpretable.
-    *
-    * @param  string $token Optional email address or string to provide
-    *                       as trace information.
-    * @return string        The unaltered input token
-    */
-    function getResponse($token = '')
+     * Not much to do here except return the token supplied.
+     * No encoding, hashing or encryption takes place for this
+     * mechanism, simply one of:
+     *  o An email address
+     *  o An opaque string not containing "@" that can be interpreted
+     *    by the sysadmin
+     *  o Nothing
+     *
+     * We could have some logic here for the second option, but this
+     * would by no means create something interpretable.
+     *
+     * @param  string $token Optional email address or string to provide
+     *                       as trace information.
+     * @return string        The unaltered input token
+     */
+    public function getResponse($token = '')
     {
         return $token;
     }

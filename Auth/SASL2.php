@@ -42,9 +42,6 @@
 * @version 1.0
 * @package Auth_SASL2
 */
-
-require_once('PEAR.php');
-
 class Auth_SASL2
 {
     /**
@@ -109,7 +106,7 @@ class Auth_SASL2
                     $parameter = $hash;
                     break;
                 }
-                return PEAR::raiseError('Invalid SASL mechanism type');
+                throw new InvalidArgumentException('Invalid SASL mechanism type');
                 break;
         }
 
