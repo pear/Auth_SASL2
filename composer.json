@@ -1,0 +1,30 @@
+{
+    "name"        : "pear/auth_sasl2",
+    "description" : "Provides code to generate responses to common SASL mechanisms, including: [Digest-MD5, Cram-MD5, Plain, Anonymous, Login (Pseudo mechanism), SCRAM]",
+    "type"        : "library",
+    "keywords"    : [ "sasl" ],
+    "homepage"    : "https://github.com/pear/Auth_SASL2",
+    "license"     : "BSD",
+    "authors"     : [
+        {
+            "name"  : "Anish Mistry",
+            "email" : "amistry@am-productions.biz"
+        },
+        {
+            "name"  : "Richard Heyes",
+            "email" : "richard@php.net"
+        },
+        {
+            "name"  : "Michael Bretterklieber",
+            "email" : "michael@bretterklieber.com"
+        }
+    ],
+    "require" : {
+        "php": ">=5.0.0"
+    },
+    "autoload": {
+        "psr-0": {
+            "Auth_SASL2" : ""
+        }
+    }
+}
