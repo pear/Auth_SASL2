@@ -40,9 +40,9 @@ Provides code to generate responses to common SASL mechanisms, including:
   <active>no</active>
  </lead>
 
- <date>2012-04-09</date>
+ <date>2017-03-07</date>
  <version>
-  <release>0.1.0</release>
+  <release>0.2.0</release>
   <api>0.1.0</api>
  </version>
  <stability>
@@ -51,7 +51,8 @@ Provides code to generate responses to common SASL mechanisms, including:
  </stability>
  <license uri="http://www.opensource.org/licenses/bsd-license.php">BSD</license>
  <notes>
-* Fork from Auth_SASL to create PHP5+ friendly package
+* Set minimum PHP version to 5.4.0
+* Set minimum PEAR version to 1.10.1
  </notes>
 
  <contents>
@@ -75,10 +76,10 @@ Provides code to generate responses to common SASL mechanisms, including:
  <dependencies>
   <required>
    <php>
-    <min>5.0.0</min>
+    <min>5.4.0</min>
    </php>
    <pearinstaller>
-    <min>1.4.3</min>
+    <min>1.10.1</min>
    </pearinstaller>
   </required>
  </dependencies>
@@ -100,6 +101,23 @@ Provides code to generate responses to common SASL mechanisms, including:
    <license uri="http://www.opensource.org/licenses/bsd-license.php">BSD</license>
    <notes>
 * Fork from Auth_SASL to create PHP5+ friendly package
+   </notes>
+  </release>
+
+  <release>
+   <version>
+    <release>0.2.0</release>
+    <api>0.1.0</api>
+   </version>
+   <stability>
+    <release>beta</release>
+    <api>beta</api>
+   </stability>
+   <date>2017-03-07</date>
+   <license uri="http://www.opensource.org/licenses/bsd-license.php">BSD</license>
+   <notes>
+* Set minimum PHP version to 5.4.0
+* Set minimum PEAR version to 1.10.1
    </notes>
   </release>
 
