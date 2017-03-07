@@ -40,21 +40,18 @@ Provides code to generate responses to common SASL mechanisms, including:
   <active>no</active>
  </lead>
 
- <date>2011-09-27</date>
-
+ <date>2012-04-09</date>
  <version>
-  <release>1.0.6</release>
-  <api>1.0.3</api>
+  <release>0.1.0</release>
+  <api>0.1.0</api>
  </version>
  <stability>
-  <release>stable</release>
-  <api>stable</api>
+  <release>beta</release>
+  <api>beta</api>
  </stability>
-
  <license uri="http://www.opensource.org/licenses/bsd-license.php">BSD</license>
  <notes>
-QA release
-* Bug #18856: Authentication warnings because of wrong Auth_SASL::factory argument [kguest]
+* Fork from Auth_SASL to create PHP5+ friendly package
  </notes>
 
  <contents>
@@ -89,107 +86,22 @@ QA release
  <phprelease />
 
  <changelog>
-  <release>
-   <version>
-    <release>1.0.6</release>
-    <api>1.0.3</api>
-   </version>
-   <stability>
-    <release>stable</release>
-    <api>stable</api>
-   </stability>
-   <date>2011-09-27</date>
-   <license uri="http://www.opensource.org/licenses/bsd-license.php">BSD</license>
-   <notes>
-QA release
-* Bug #18856: Authentication warnings because of wrong Auth_SASL::factory argument [kguest]
-   </notes>
-  </release>
-  <release>
-   <version>
-    <release>1.0.5</release>
-    <api>1.0.3</api>
-   </version>
-   <stability>
-    <release>stable</release>
-    <api>stable</api>
-   </stability>
-   <date>2011-09-04</date>
-   <license uri="http://www.opensource.org/licenses/bsd-license.php">BSD</license>
-   <notes>
-QA release
-* Added support for any mechanism of the SCRAM family; with thanks to Jehan Pagès. [kguest]
-* crammd5 and digestmd5 mechanisms name deprecated in favour of IANA registered names 'cram-md5' and 'digest-md5'; with thanks to Jehan Pagès. [kguest]
-   </notes>
-  </release>
-  <release>
-   <version>
-    <release>1.0.4</release>
-    <api>1.0.3</api>
-   </version>
-   <stability>
-    <release>stable</release>
-    <api>stable</api>
-   </stability>
-   <date>2010-02-07</date>
-   <license uri="http://www.opensource.org/licenses/bsd-license.php">BSD</license>
-   <notes>
-QA release
-* Fix bug #16624: open_basedir restriction warning in DigestMD5.php [till]
-   </notes>
-  </release>
 
   <release>
    <version>
-    <release>1.0.3</release>
-    <api>1.0.3</api>
+    <release>0.1.0</release>
+    <api>0.1.0</api>
    </version>
    <stability>
-    <release>stable</release>
-    <api>stable</api>
+    <release>beta</release>
+    <api>beta</api>
    </stability>
-   <date>2009-08-05</date>
+   <date>2012-04-09</date>
    <license uri="http://www.opensource.org/licenses/bsd-license.php">BSD</license>
    <notes>
-QA release
-* Move SVN to proper directory structure [cweiske]
-* Fix Bug #8775: Error in package.xml
-* Fix Bug #14671: Security issue due to seeding random number generator [cweiske]
+* Fork from Auth_SASL to create PHP5+ friendly package
    </notes>
   </release>
 
-  <release>
-   <version>
-    <release>1.0.2</release>
-    <api>1.0.2</api>
-   </version>
-   <stability>
-    <release>stable</release>
-    <api>stable</api>
-   </stability>
-   <date>2006-05-21</date>
-   <license uri="http://www.opensource.org/licenses/bsd-license.php">BSD</license>
-   <notes>
-* Fixed Bug #2143 Auth_SASL_DigestMD5::getResponse() generates invalid response
-* Fixed Bug #6611 Suppress PHP 5 Notice Errors
-* Fixed Bug #2154 realm isn't contained in challange
-   </notes>
-  </release>
-
-  <release>
-   <version>
-    <release>1.0.1</release>
-    <api>1.0.1</api>
-   </version>
-   <stability>
-    <release>stable</release>
-    <api>stable</api>
-   </stability>
-   <date>2003-09-11</date>
-   <license uri="http://www.opensource.org/licenses/bsd-license.php">BSD</license>
-   <notes>* Added authcid/authzid separation in PLAIN and DIGEST-MD5.
-   </notes>
-  </release>
  </changelog>
-
 </package>

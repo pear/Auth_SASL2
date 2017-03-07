@@ -19,12 +19,15 @@
             "email" : "michael@bretterklieber.com"
         }
     ],
-    "require" : {
-        "php": ">=5.0.0"
-    },
     "autoload": {
         "psr-0": {
             "Auth_SASL2" : ""
         }
+    },
+    "require" : {
+        "php": ">=5.4.0"
+    },
+    "require-dev" : {
+        "phpunit/phpunit": "@stable"
     }
 }

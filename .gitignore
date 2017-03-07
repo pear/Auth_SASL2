@@ -1,5 +1,12 @@
 *~
 .*~
+*.tgz
+
 composer.lock
 vendor/
 .idea
+
+# Eclipse
+.buildpath
+.project
+.settings/
