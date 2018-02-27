@@ -49,7 +49,7 @@ Provides code to generate responses to common SASL mechanisms, including:
   <release>beta</release>
   <api>beta</api>
  </stability>
- <license uri="http://www.opensource.org/licenses/bsd-license.php">BSD</license>
+ <license uri="http://www.opensource.org/licenses/bsd-3-clause">BSD</license>
  <notes>
 * Set minimum PHP version to 5.4.0
 * Set minimum PEAR version to 1.10.1

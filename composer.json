@@ -4,7 +4,7 @@
     "type"        : "library",
     "keywords"    : [ "sasl" ],
     "homepage"    : "https://github.com/pear/Auth_SASL2",
-    "license"     : "BSD",
+    "license"     : "BSD-3-Clause",
     "authors"     : [
         {
             "name"  : "Anish Mistry",
