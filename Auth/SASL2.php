@@ -66,10 +66,9 @@ class Auth_SASL2
                 break;
 
             case 'login':
-                /* TODO trigger deprecation warning in 1.0.0 and remove LOGIN authentication in 2.0.0
+                // TODO remove LOGIN authentication in 2.0.0
                 trigger_error(__CLASS__ . ': Authentication method LOGIN' .
                     ' is no longer secure and should be avoided.', E_USER_DEPRECATED);
-                */
                 $filename  = 'Auth/SASL2/Login.php';
                 $classname = 'Auth_SASL2_Login';
                 break;
@@ -88,10 +87,9 @@ class Auth_SASL2
                 // $msg = 'Deprecated mechanism name. Use IANA-registered name: CRAM-MD5.';
                 // trigger_error($msg, E_USER_DEPRECATED);
             case 'cram-md5':
-                /* TODO trigger deprecation warning in 1.0.0 and remove CRAM-MD5 authentication in 2.0.0
+                // TODO remove CRAM-MD5 authentication in 2.0.0
                 trigger_error(__CLASS__ . ': Authentication method CRAM-MD5' .
                     ' is no longer secure and should be avoided.', E_USER_DEPRECATED);
-                */
                 $filename  = 'Auth/SASL2/CramMD5.php';
                 $classname = 'Auth_SASL2_CramMD5';
                 break;
@@ -100,10 +98,9 @@ class Auth_SASL2
                 // $msg = 'Deprecated mechanism name. Use IANA-registered name: DIGEST-MD5.';
                 // trigger_error($msg, E_USER_DEPRECATED);
             case 'digest-md5':
-                /* TODO trigger deprecation warning in 1.0.0 and remove DIGEST-MD5 authentication in 2.0.0
+                // TODO remove DIGEST-MD5 authentication in 2.0.0
                 trigger_error(__CLASS__ . ': Authentication method DIGEST-MD5' .
                     ' is no longer secure and should be avoided.', E_USER_DEPRECATED);
-                */
                 $filename  = 'Auth/SASL2/DigestMD5.php';
                 $classname = 'Auth_SASL2_DigestMD5';
                 break;
