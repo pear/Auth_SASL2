@@ -49,9 +49,11 @@ class Auth_SASL2
     * type.
     *
     * @param string $type One of: Anonymous
+    *                             Login (DEPRECATED)
     *                             Plain
-    *                             CramMD5
-    *                             DigestMD5
+    *                             External
+    *                             CramMD5 (DEPRECATED)
+    *                             DigestMD5 (DEPRECATED)
     *                             SCRAM-* (any mechanism of the SCRAM family)
     *                     Types are not case sensitive
     */
@@ -64,6 +66,10 @@ class Auth_SASL2
                 break;
 
             case 'login':
+                /* TODO trigger deprecation warning in 1.0.0 and remove LOGIN authentication in 2.0.0
+                trigger_error(__CLASS__ . ': Authentication method LOGIN' .
+                    ' is no longer secure and should be avoided.', E_USER_DEPRECATED);
+                */
                 $filename  = 'Auth/SASL2/Login.php';
                 $classname = 'Auth_SASL2_Login';
                 break;
@@ -82,6 +88,10 @@ class Auth_SASL2
                 // $msg = 'Deprecated mechanism name. Use IANA-registered name: CRAM-MD5.';
                 // trigger_error($msg, E_USER_DEPRECATED);
             case 'cram-md5':
+                /* TODO trigger deprecation warning in 1.0.0 and remove CRAM-MD5 authentication in 2.0.0
+                trigger_error(__CLASS__ . ': Authentication method CRAM-MD5' .
+                    ' is no longer secure and should be avoided.', E_USER_DEPRECATED);
+                */
                 $filename  = 'Auth/SASL2/CramMD5.php';
                 $classname = 'Auth_SASL2_CramMD5';
                 break;
@@ -90,8 +100,10 @@ class Auth_SASL2
                 // $msg = 'Deprecated mechanism name. Use IANA-registered name: DIGEST-MD5.';
                 // trigger_error($msg, E_USER_DEPRECATED);
             case 'digest-md5':
-                // $msg = 'DIGEST-MD5 is a deprecated SASL mechanism as per RFC-6331. Using it could be a security risk.';
-                // trigger_error($msg, E_USER_NOTICE);
+                /* TODO trigger deprecation warning in 1.0.0 and remove DIGEST-MD5 authentication in 2.0.0
+                trigger_error(__CLASS__ . ': Authentication method DIGEST-MD5' .
+                    ' is no longer secure and should be avoided.', E_USER_DEPRECATED);
+                */
                 $filename  = 'Auth/SASL2/DigestMD5.php';
                 $classname = 'Auth_SASL2_DigestMD5';
                 break;
@@ -101,7 +113,7 @@ class Auth_SASL2
                 if (preg_match($scram, $type, $matches))
                 {
                     $hash = $matches[1];
-                    $filename = dirname(__FILE__) .'/SASL2/SCRAM.php';
+                    $filename = __DIR__ .'/SASL2/SCRAM.php';
                     $classname = 'Auth_SASL2_SCRAM';
                     $parameter = $hash;
                     break;
