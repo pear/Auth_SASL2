@@ -85,7 +85,11 @@ class Auth_SASL2_SCRAM extends Auth_SASL2_Common
             'sha-384' => 'sha384',
             'sha384' => 'sha384',
             'sha-512' => 'sha512',
-            'sha512' => 'sha512');
+            'sha512' => 'sha512',
+            'sha3-224' => 'sha3-224',
+            'sha3-256' => 'sha3-256',
+            'sha3-384' => 'sha3-384',
+            'sha3-512' => 'sha3-512');
         if (function_exists('hash_hmac') && isset($hashes[$hash]))
         {
             $selectedHash = $hashes[$hash];
