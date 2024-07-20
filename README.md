@@ -1,7 +1,7 @@
 # Auth_SASL2 - Abstraction of various SASL2 mechanism responses
 
-[![Build Status](https://travis-ci.org/pear/Auth_SASL2.svg?branch=master)](https://travis-ci.org/pear/Auth_SASL2)
-    
+[![Test Status](https://github.com/pear/Auth_SASL2/actions/workflows/ci.yml/badge.svg)](https://github.com/pear/Auth_SASL2/actions/workflows/ci.yml)
+
 
 Provides code to generate responses to common SASL2 mechanisms, including:
 - Anonymous
